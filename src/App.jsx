@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
@@ -12,12 +11,10 @@ import {
   StarsCanvas,
 } from "./components";
 const App = () => {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
-      <div id="style-2" className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 bg-primary">
+        <div className=" bg-center">
           <Navbar />
           <Hero />
         </div>

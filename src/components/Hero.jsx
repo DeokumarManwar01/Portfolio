@@ -1,8 +1,32 @@
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { ComputersCanvas, MobilesCanvas } from "./canvas";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -22,9 +46,18 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      {!isMobile && (
+        <div className="relative top-[150px] h-[550px] mx-auto">
+          <ComputersCanvas />
+        </div>
+      )}
+      {isMobile && (
+        <div className="relative top-[200px] h-[550px] ">
+          <MobilesCanvas />
+        </div>
+      )}
       <div className="absolute xs:bottom-10 bottom-8 w-full flex justify-center items-center">
-        <a href="#about">
+        <a href="#about" className="flex flex-col items-center justify-center">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
@@ -38,6 +71,7 @@ const Hero = () => {
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
+          <p>Click to Scroll Down</p>
         </a>
       </div>
     </section>
