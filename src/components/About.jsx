@@ -38,11 +38,17 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4  text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I'm a skilled Full Stack Developer with experience in TypeScript and
-          JavaScript, and expertise in frameworks like React, Node.js, and
-          Three.js. I'm a quick learner and collaborate closely with clients to
-          create efficient, scalable, and user-friendly solutions that solve
-          real-world problems. Let's work together to bring your ideas to life!
+          I'm a skilled Full Stack Developer specializing in TypeScript and
+          JavaScript, with expertise in React, Node.js, Three.js, and advanced
+          3D visualization technologies like CesiumJS. I build scalable,
+          efficient, and user-centric web applications and interactive 3D
+          experiences that solve real-world problems. Currently, I architect
+          complex drone telemetry and mapping solutions that reduce operational
+          risks by 40% and boost mission success rates by 35%. I collaborate
+          closely with clients and teams to deliver innovative, AI-augmented
+          software solutions, ensuring seamless performance and enhanced user
+          satisfaction. Let's connect and create impactful digital experiences
+          that bring your ideas to life!
         </motion.p>
       </div>
 

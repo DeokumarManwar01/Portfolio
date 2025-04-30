@@ -16,8 +16,14 @@ import {
   figma,
   carrent,
   jobit,
+  oneCab,
   tripguide,
   threejs,
+  redis,
+  cesium,
+  chartjs,
+  mern,
+  flytbase,
 } from "../assets";
 
 export const navLinks = [
@@ -37,15 +43,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
-    title: "Backend Developer",
+    title: "MEAN Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "MERN Creator",
     icon: creator,
   },
 ];
@@ -95,9 +101,65 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "cesium",
+    icon: cesium,
+  },
 ];
 
 const experiences = [
+  {
+    title: "Software Development Engineer - 1",
+    company_name: "Flytbase",
+    icon: flytbase, // Use an appropriate icon for CesiumJS or Flytbase
+    iconBg: "#383E56",
+    date: "Feb 2024 – Present",
+    points: [
+      "Architected advanced 3D mapping using CesiumJS with terrain visualization, height-referenced entities, and altitude monitoring, reducing operational risks by 40%.",
+      "Implemented orthographic view with terrain clamping and drone tracking, boosting mission success rates by 35%.",
+      "Developed a guest-sharing platform with real-time drone telemetry visualization and map-based tracking, enhancing operational efficiency in international deployments by 60%.",
+      "Established a multi-unit conversion system supporting international standards, increasing dashboard usability and customer satisfaction.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Manufacturing Adda",
+    icon: mern,
+    iconBg: "#E6DEDD",
+    date: "Aug 2023 – Jan 2024",
+    points: [
+      "Led a complex project using React.js (TSX) for frontend and Node.js (TS) for backend, ensuring scalable and efficient architecture.",
+      "Engineered and optimized AWS infrastructure, integrated Rupay payment services, and executed DevOps practices to enhance cloud computing capabilities.",
+      "Improved system reliability and user experience through robust infrastructure and payment integration.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Alliedge Technologies",
+    icon: mern,
+    iconBg: "#383E56",
+    date: "Sep 2023 – Dec 2023",
+    points: [
+      "Built a full-stack ERP system using React.js, Redux, Node.js, and MongoDB for EMS Electricals, reducing inventory errors by 45% and achieving 98% accuracy.",
+      "Designed real-time dashboards, improving procurement decision-making speed by 95% and streamlining inventory management.",
+    ],
+  },
+  {
+    title: "React.js Developer",
+    company_name: "",
+    icon: reactjs,
+    iconBg: "#E6DEDD",
+    date: "Jan 2022 - Sep 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
   {
     title: "Web Developer",
     company_name: "",
@@ -106,32 +168,6 @@ const experiences = [
     date: "Jan 2021 - Dec 2021",
     points: [
       "Developing and maintaining web applications using javascript and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React.js Developer",
-    company_name: "",
-    icon: reactjs,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Sep 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-
-  {
-    title: "Full stack Developer",
-    company_name: "",
-    icon: reactjs,
-    iconBg: "#E6DEDD",
-    date: "Sep 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js, node.js, mongodb and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -150,24 +186,24 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Travel Advisor",
+    name: "Cab Management System",
     description:
-      "Web-based platform that allows users to search, filter, and See details of the places that user wants to explore.",
+      "A real-time ride-sharing platform built during Afour Hackathon, connecting users and drivers seamlessly. Integrated Google Maps Autocomplete for location search and Socket.io for real-time communication. Reduced wait times and improved user experience.",
+    role: "Full Stack Developer",
+    context: "Hackathon Project, July 2023",
+    impact:
+      "Enabled real-time matching and communication; streamlined the ride booking process.",
+    challenges:
+      "Ensured low-latency updates and handled concurrent user requests using WebSockets.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "socket.io", color: "yellow-text-gradient" },
+      { name: "google-maps", color: "pink-text-gradient" },
+      { name: "redux", color: "purple-text-gradient" },
+      { name: "tailwind", color: "indigo-text-gradient" },
     ],
-    image: carrent,
+    image: oneCab,
     source_code_link: "https://github.com/DeokumarManwar/Travel-Advisor",
   },
   {

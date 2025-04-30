@@ -21,26 +21,37 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import carrent from "./carrent.png";
+import mern from "./mern.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import redis from "./tech/redis.png";
+import cesium from "./tech/cesium.webp";
+import chartjs from "./tech/chartjs.png";
+import flytbase from "./flytbase.webp";
+import oneCab from "./oneCab.jpeg";
 
 export {
   logo,
   backend,
   creator,
+  redis,
   mobile,
   web,
   github,
   menu,
   close,
+  flytbase,
+  cesium,
   css,
   figma,
   git,
   html,
   javascript,
+  oneCab,
   mongodb,
   nodejs,
   reactjs,
+  chartjs,
   redux,
   tailwind,
   typescript,
@@ -48,4 +59,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  mern,
 };
